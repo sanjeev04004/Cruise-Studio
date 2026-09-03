@@ -1,4 +1,4 @@
- // CRUISE STUDIO — interactions
+// CRUISE STUDIO — interactions
 
 document.getElementById('year').textContent = new Date().getFullYear();
 

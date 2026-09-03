@@ -1,4 +1,4 @@
- /* ============================================
+/* ============================================
    CRUISE STUDIO — design tokens
    ============================================ */
 :root{
@@ -463,3 +463,17 @@ section{ padding: 140px 5vw; position: relative; }
 @media (max-width: 860px){
   .main-nav{
     position: fixed; top: 0; right: 0; height: 100vh; width: min(78vw, 320px);
+    background: var(--bg-raised); flex-direction: column; justify-content:center; align-items:flex-start;
+    gap: 2rem; padding: 0 40px; transform: translateX(100%); transition: transform .5s var(--ease);
+    border-left: 1px solid var(--line);
+  }
+  .main-nav.is-open{ transform: translateX(0); }
+  .nav-toggle{ display:block; }
+  .service-row{ grid-template-columns: 1fr; gap: 0.6rem; }
+  .service-price{ order: -1; color: var(--text-dim); font-size: 0.85rem; }
+}
+
+@media (max-width: 640px){
+  section{ padding: 90px 6vw; }
+  .hero{ padding-top: 120px; }
+}
