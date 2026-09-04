@@ -1,4 +1,4 @@
-/* ============================================
+ /* ============================================
    CRUISE STUDIO — design tokens
    ============================================ */
 :root{
@@ -350,6 +350,9 @@ section{ padding: 140px 5vw; position: relative; }
 }
 .work-card:hover .work-card-visual{ border-color: var(--silver-3); }
 .work-card-video{ background: linear-gradient(160deg, #1b1b1f, #0c0c0e); }
+.work-card-thumb{ background-size: cover; background-position: center; }
+.work-card-thumb::before{ content:''; position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.55) 100%); border-radius: inherit; }
+.work-card-thumb .play-btn{ position: relative; z-index: 1; background: rgba(0,0,0,0.35); backdrop-filter: blur(2px); }
 .work-card-reel{ background: linear-gradient(200deg, #17171a, #0a0a0c); }
 .work-card-photo{ background: linear-gradient(135deg, #201c14, #0c0c0e); }
 .work-card-site{ background: linear-gradient(135deg, #14181b, #0a0c0e); background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 20px 20px, 20px 20px, 100% 100%; }
