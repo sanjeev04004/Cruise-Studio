@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRUISE STUDIO — We Create. We Edit. We Develop.</title>
+<meta name="description" content="CRUISE STUDIO is a web development, photo editing, video editing and advertisement production studio led by Sanjeev Kumar.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href=" image/logo-mark.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="progress-rail" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+
+<header class="site-header" id="siteHeader">
+  <a href="#top" class="brand">
+    <img src="images/logo-mark.png" alt="Cruise Studio logo" class="brand-icon">
+    <span>CRUISE<span class="brand-dot">•</span>STUDIO</span>
+  </a>
+  <nav class="main-nav" id="mainNav">
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#about">About</a>
+    <a href="#contact" class="nav-cta magnetic">Get a quote</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-index">01 / STUDIO</div>
+    <h1 class="hero-title">
+      <span class="line">We create.</span>
+      <span class="line">We edit.</span>
+      <span class="line line-shine">We develop.</span>
+    </h1>
+    <p class="hero-sub">
+      CRUISE STUDIO is a one-person production house run by Sanjeev Kumar — websites,
+      photo edits, video edits and advertisement films, built with the same
+      obsessive attention a bigger agency charges ten times more for.
+    </p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary magnetic">Explore our work</a>
+      <a href="#contact" class="btn btn-ghost magnetic">Get a quote</a>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-meta-item"><span>4</span>services under one roof</div>
+      <div class="hero-meta-item"><span>1:1</span>direct with the founder</div>
+      <div class="hero-meta-item"><span>₹199+</span>starting price</div>
+    </div>
+    <div class="hero-scene" aria-hidden="true">
+      <div class="scene-grid"></div>
+      <div class="scene-orb"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>WEB DEVELOPMENT</span><span>PHOTO EDITING</span><span>VIDEO EDITING</span><span>ADVERTISEMENT FILMS</span><span>AI-POWERED PRODUCTION</span>
+      <span>WEB DEVELOPMENT</span><span>PHOTO EDITING</span><span>VIDEO EDITING</span><span>ADVERTISEMENT FILMS</span><span>AI-POWERED PRODUCTION</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-head">
+      <div class="section-index">02 / SERVICES</div>
+      <h2>Four crafts. One studio.</h2>
+    </div>
+    <div class="services-list">
+
+      <article class="service-row">
+        <div class="service-num">01</div>
+        <div class="service-name">Web Development</div>
+        <div class="service-desc">Custom-coded websites — no drag-and-drop templates. Fast, responsive, built to convert visitors into clients.</div>
+        <div class="service-price">from ₹3,000</div>
+      </article>
+
+      <article class="service-row">
+        <div class="service-num">02</div>
+        <div class="service-name">Photo Editing</div>
+        <div class="service-desc">Colour correction, background work, portrait retouching and creative composites for products, portraits and brands.</div>
+        <div class="service-price">from ₹199</div>
+      </article>
+
+      <article class="service-row">
+        <div class="service-num">03</div>
+        <div class="service-name">Video Editing</div>
+        <div class="service-desc">Reels, YouTube edits and cinematic cuts — paced, graded and sound-designed to hold attention.</div>
+        <div class="service-price">from ₹499</div>
+      </article>
+
+      <article class="service-row">
+        <div class="service-num">04</div>
+        <div class="service-name">Advertisement Films</div>
+        <div class="service-desc">Concept-to-delivery ad production, including AI-powered advertisement &amp; video production for faster turnarounds.</div>
+        <div class="service-price">from ₹1,499</div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="section-head">
+      <div class="section-index">03 / PRICING</div>
+      <h2>Straightforward starting prices.</h2>
+      <p class="section-note">Every project gets a custom quote after a quick chat — these are the floors, not the ceiling.</p>
+    </div>
+
+    <div class="pricing-tabs" id="pricingTabs">
+      <button class="tab-btn is-active" data-tab="web">Web Development</button>
+      <button class="tab-btn" data-tab="photo">Photo Editing</button>
+      <button class="tab-btn" data-tab="video">Video Editing</button>
+      <button class="tab-btn" data-tab="ads">Advertisement</button>
+      <button class="tab-btn" data-tab="ai">AI Advertisement</button>
+    </div>
+
+    <div class="pricing-panels">
+
+      <div class="pricing-panel is-active" data-panel="web">
+        <div class="price-card"><div class="price-tier">Basic</div><div class="price-amt">₹3,000+</div><div class="price-detail">Single page, essential sections, mobile-friendly</div></div>
+        <div class="price-card"><div class="price-tier">Business</div><div class="price-amt">₹8,000+</div><div class="price-detail">Multi-page site, contact forms, brand styling</div></div>
+        <div class="price-card price-card-feature"><div class="price-tier">Premium</div><div class="price-amt">₹20,000+</div><div class="price-detail">Animation, custom UI, performance tuning</div></div>
+        <div class="price-card"><div class="price-tier">E-commerce</div><div class="price-amt">₹30,000+</div><div class="price-detail">Product catalogue, cart, checkout flow</div></div>
+        <div class="price-card"><div class="price-tier">Custom + Admin</div><div class="price-amt">₹50,000+</div><div class="price-detail">Admin dashboard, bespoke functionality</div></div>
+      </div>
+
+      <div class="pricing-panel" data-panel="photo">
+        <div class="price-card"><div class="price-tier">Basic edit</div><div class="price-amt">₹100–300</div><div class="price-detail">Colour correction, per photo</div></div>
+        <div class="price-card"><div class="price-tier">Background work</div><div class="price-amt">₹150–400</div><div class="price-detail">Remove or change background, per photo</div></div>
+        <div class="price-card price-card-feature"><div class="price-tier">Portrait edit</div><div class="price-amt">₹300–700</div><div class="price-detail">Professional retouching, per photo</div></div>
+        <div class="price-card"><div class="price-tier">Creative edit</div><div class="price-amt">₹500–1,500+</div><div class="price-detail">Advanced compositing, per photo</div></div>
+        <div class="price-card"><div class="price-tier">10-photo package</div><div class="price-amt">₹1,500–4,000</div><div class="price-detail">Bundled rate</div></div>
+      </div>
+
+      <div class="pricing-panel" data-panel="video">
+        <div class="price-card"><div class="price-tier">Basic reel</div><div class="price-amt">₹300–700</div><div class="price-detail">Short-form, simple cut</div></div>
+        <div class="price-card price-card-feature"><div class="price-tier">Professional reel</div><div class="price-amt">₹700–1,500</div><div class="price-detail">Graded, sound-designed</div></div>
+        <div class="price-card"><div class="price-tier">Cinematic video</div><div class="price-amt">₹1,500–4,000+</div><div class="price-detail">Full narrative edit</div></div>
+        <div class="price-card"><div class="price-tier">YouTube video</div><div class="price-amt">₹1,000–4,000+</div><div class="price-detail">Long-form edit</div></div>
+        <div class="price-card"><div class="price-tier">10 reels package</div><div class="price-amt">₹5,000–12,000</div><div class="price-detail">Bundled rate</div></div>
+      </div>
+
+      <div class="pricing-panel" data-panel="ads">
+        <div class="price-card"><div class="price-tier">15–30 sec ad</div><div class="price-amt">₹1,000–2,000</div><div class="price-detail">Simple promotional cut</div></div>
+        <div class="price-card price-card-feature"><div class="price-tier">30–60 sec ad</div><div class="price-amt">₹2,500–5,000</div><div class="price-detail">Professional production</div></div>
+        <div class="price-card"><div class="price-tier">Cinematic ad</div><div class="price-amt">₹5,000–10,000+</div><div class="price-detail">Full concept to delivery</div></div>
+        <div class="price-card"><div class="price-tier">Premium commercial</div><div class="price-amt">₹10,000–25,000+</div><div class="price-detail">Brand-level production</div></div>
+      </div>
+
+      <div class="pricing-panel" data-panel="ai">
+        <div class="price-card"><div class="price-tier">15–20 sec ad</div><div class="price-amt">₹1,000–1,500</div><div class="price-detail">AI-powered, basic</div></div>
+        <div class="price-card price-card-feature"><div class="price-tier">30 sec ad</div><div class="price-amt">₹2,000–3,500</div><div class="price-detail">AI-powered, professional</div></div>
+        <div class="price-card"><div class="price-tier">45–60 sec ad</div><div class="price-amt">₹3,500–6,000</div><div class="price-detail">AI-powered, premium</div></div>
+        <div class="price-card"><div class="price-tier">Cinematic / brand ad</div><div class="price-amt">₹5,000–10,000+</div><div class="price-detail">AI-powered, full brand film</div></div>
+        <div class="price-card"><div class="price-tier">Complete package</div><div class="price-amt">₹3,000–7,000+</div><div class="price-detail">Script + visuals + voice + edit</div></div>
+      </div>
+
+    </div>
+
+    <p class="pricing-footnote">Website pricing above covers the agreed build only. Future updates and new features are quoted separately — ask about monthly care plans from ₹499/month.</p>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <div class="section-index">04 / SELECTED WORK</div>
+      <h2>The proof is in the pixels.</h2>
+    </div>
+
+    <article class="feature-project">
+      <div class="feature-project-visual">
+        <a href="https://sanjeev04004.github.io/Dilip-Jewellers-and-sons/" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
+        <div class="browser-chrome">
+          <div class="chrome-dots"><span></span><span></span><span></span></div>
+          <div class="chrome-url">sanjeev04004.github.io/Dilip-Jewellers-and-sons</div>
+        </div>
+        <div class="browser-body" style="padding:0; overflow:hidden; max-height: 420px;">
+          <img src="  images/dilip-sons-screenshot.jpg" alt="Dilip Jewellers and Sons website" style="width:100%; display:block; object-fit:cover; object-position: top;">
+        </div>
+        </a>
+      </div>
+      <div class="feature-project-info">
+        <div class="feature-tag">Featured project — live now</div>
+        <h3>Dilip Jewellers &amp; Sons</h3>
+        <p>Chowk Sarafe Wale — a jewellery shop website built around trust and craft — a home page, a full products catalogue by category, gemstones by zodiac sign, a visit-booking flow with calendar picker, and a reviews section, all wrapped in a warm, gold-forward palette.</p>
+        <div class="tech-tags">
+          <span>UI/UX</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <a href="https://sanjeev04004.github.io/Dilip-Jewellers-and-sons/" target="_blank" rel="noopener" class="text-link magnetic">Visit live site →</a>
+
+      </div>
+    </article>
+
+    <div class="work-grid">
+      <article class="work-card">
+        <a href="https://www.instagram.com/reel/DcwOiRtznAa/" target="_blank" rel="noopener" class="work-card-visual work-card-thumb" style="background-image:url('images/thumb-hollow-night.jpg')">
+          <div class="play-btn"><span></span></div>
+        </a>
+        <div class="work-card-label"><span>The Hollow Night — trailer</span><a href="https://www.instagram.com/reel/DcwOiRtznAa/" target="_blank" rel="noopener" class="text-link-sm">Watch reel →</a></div>
+      </article>
+      <article class="work-card">
+        <a href="https://www.instagram.com/reel/DcnWYG9TNQi/" target="_blank" rel="noopener" class="work-card-visual work-card-thumb" style="background-image:url('images/thumb-burberry.png')">
+          <div class="play-btn"><span></span></div>
+        </a>
+        <div class="work-card-label"><span>Burberry London</span><a href="https://www.instagram.com/reel/DcnWYG9TNQi/" target="_blank" rel="noopener" class="text-link-sm">Watch reel →</a></div>
+      </article>
+      <article class="work-card">
+        <a href="https://www.instagram.com/reel/Dcsjg0hO7pq/" target="_blank" rel="noopener" class="work-card-visual work-card-thumb" style="background-image:url('images/thumb-rishi-soujit.png')">
+          <div class="play-btn"><span></span></div>
+        </a>
+        <div class="work-card-label"><span>Rishi &amp; Soujit</span><a href="https://www.instagram.com/reel/Dcsjg0hO7pq/" target="_blank" rel="noopener" class="text-link-sm">Watch reel →</a></div>
+      </article>
+      <article class="work-card">
+        <a href="https://www.instagram.com/reel/DcWzV-EzWZo/" target="_blank" rel="noopener" class="work-card-visual work-card-thumb" style="background-image:url('images/thumb-reel-1.png')">
+          <div class="play-btn"><span></span></div>
+        </a>
+        <div class="work-card-label"><span>Cinematic reel</span><a href="https://www.instagram.com/reel/DcWzV-EzWZo/" target="_blank" rel="noopener" class="text-link-sm">Watch reel →</a></div>
+      </article>
+      <article class="work-card">
+        <a href="https://photos.app.goo.gl/WG7M53Av2HuRG1MFA" target="_blank" rel="noopener" class="work-card-visual work-card-reel">
+          <div class="play-btn"><span></span></div>
+        </a>
+        <div class="work-card-label"><span>Advertisement — Hindi</span><a href="https://photos.app.goo.gl/WG7M53Av2HuRG1MFA" target="_blank" rel="noopener" class="text-link-sm">Watch video →</a></div>
+      </article>
+      <article class="work-card">
+        <a href="https://photos.app.goo.gl/8gBMdqdoPd3njKT36" target="_blank" rel="noopener" class="work-card-visual work-card-reel">
+          <div class="play-btn"><span></span></div>
+        </a>
+        <div class="work-card-label"><span>Advertisement — English</span><a href="https://photos.app.goo.gl/8gBMdqdoPd3njKT36" target="_blank" rel="noopener" class="text-link-sm">Watch video →</a></div>
+      </article>
+      <article class="work-card">
+        <a href="https://photos.app.goo.gl/E4zTebMD3phLtTtb9" target="_blank" rel="noopener" class="work-card-visual work-card-video">
+          <div class="play-btn"><span></span></div>
+        </a>
+        <div class="work-card-label"><span>Advertisement edit</span><a href="https://photos.app.goo.gl/E4zTebMD3phLtTtb9" target="_blank" rel="noopener" class="text-link-sm">Watch video →</a></div>
+      </article>
+      <article class="work-card">
+        <a href="https://photos.app.goo.gl/Uay9ekwDUhU7KaMW6" target="_blank" rel="noopener" class="work-card-visual work-card-video">
+          <div class="play-btn"><span></span></div>
+        </a>
+        <div class="work-card-label"><span>Advertisement edit</span><a href="https://photos.app.goo.gl/Uay9ekwDUhU7KaMW6" target="_blank" rel="noopener" class="text-link-sm">Watch video →</a></div>
+      </article>
+      <article class="work-card">
+        <a href="https://photos.app.goo.gl/Y7F6FhNsMkpvUhZN9" target="_blank" rel="noopener" class="work-card-visual work-card-reel">
+          <div class="play-btn"><span></span></div>
+        </a>
+        <div class="work-card-label"><span>Advertisement edit</span><a href="https://photos.app.goo.gl/Y7F6FhNsMkpvUhZN9" target="_blank" rel="noopener" class="text-link-sm">Watch video →</a></div>
+      </article>
+      <article class="work-card">
+        <a href="https://photos.app.goo.gl/QiL4r6HkLwarxdSJ6" target="_blank" rel="noopener" class="work-card-visual work-card-video">
+          <div class="play-btn"><span></span></div>
+        </a>
+        <div class="work-card-label"><span>Advertisement edit</span><a href="https://photos.app.goo.gl/QiL4r6HkLwarxdSJ6" target="_blank" rel="noopener" class="text-link-sm">Watch video →</a></div>
+      </article>
+      <article class="work-card">
+        <div class="work-card-visual work-card-photo"></div>
+        <div class="work-card-label"><span>Photo retouch</span><a href="#contact" class="text-link-sm">View project →</a></div>
+      </article>
+      <article class="work-card">
+        <div class="work-card-visual work-card-site"></div>
+        <div class="work-card-label"><span>Website build</span><a href="#contact" class="text-link-sm">View project →</a></div>
+      </article>
+    </div>
+    <p class="section-note center">More projects are added here as each one ships.</p>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="section-head">
+      <div class="section-index">05 / PROCESS</div>
+      <h2>How a project moves.</h2>
+    </div>
+    <div class="process-list">
+      <div class="process-step">
+        <div class="process-step-num">01</div>
+        <div class="process-step-body"><h3>Idea</h3><p>We talk through what you actually need — no jargon, no upsell.</p></div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">02</div>
+        <div class="process-step-body"><h3>Design</h3><p>Layout, tone and visuals are planned before a single line of code is written.</p></div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">03</div>
+        <div class="process-step-body"><h3>Create</h3><p>Build, edit or shoot — with progress shared as it happens, not at the end.</p></div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">04</div>
+        <div class="process-step-body"><h3>Review</h3><p>You check it, we refine it. Feedback rounds are part of the price, not an add-on.</p></div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">05</div>
+        <div class="process-step-body"><h3>Deliver</h3><p>Final files, live link, and a clear note on what future updates would cost.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-visual">
+      <div class="about-photo-frame">
+      <img src="images/sanjeev-photo.png" alt="Sanjeev Kumar, Founder of Cruise Studio">
+    </div>
+    </div>
+    <div class="about-body">
+      <div class="section-index">06 / ABOUT</div>
+      <h2>Sanjeev Kumar</h2>
+      <p class="about-role">Founder &amp; Creator, Cruise Studio</p>
+      <p>Cruise Studio started as one person who was tired of watching small
+      businesses get overcharged for underwhelming websites and lifeless
+      video edits. Every project that comes through the studio is handled
+      personally — no handing your brief off to a junior, no templated
+      results. Just direct, careful work from concept to delivery.</p>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="section-head">
+      <div class="section-index">07 / REVIEWS</div>
+      <h2>What clients say.</h2>
+    </div>
+    <div class="reviews-empty">
+      <p>The first reviews are on their way — check back soon, or be the first to leave one after your project.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-index">08 / CONTACT</div>
+    <h2 class="contact-title">Let's build something<br>that looks expensive.</h2>
+    <p class="section-note">Send a brief, ask a question, or just say hello — usually a same-day reply.</p>
+
+    <form class="quote-form" id="quoteForm">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="tel" name="phone" placeholder="Phone number" required>
+      </div>
+      <select name="service" required>
+        <option value="" disabled selected>What do you need?</option>
+        <option>Web Development</option>
+        <option>Photo Editing</option>
+        <option>Video Editing</option>
+        <option>Advertisement Film</option>
+        <option>Something else</option>
+      </select>
+      <textarea name="brief" placeholder="Tell me a little about the project" rows="3"></textarea>
+      <button type="submit" class="btn btn-primary magnetic">Send brief</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+
+    <div class="contact-channels">
+      <a href="tel:+919820189508" class="channel-card magnetic">
+        <span class="channel-label">Call</span><span class="channel-value">+91 98201 89508</span>
+      </a>
+      <a href="https://wa.me/919820189508" target="_blank" rel="noopener" class="channel-card magnetic">
+        <span class="channel-label">WhatsApp</span><span class="channel-value">+91 98201 89508</span>
+      </a>
+      <a href="mailto:sanjeevkumar945537@gmail.com" class="channel-card magnetic">
+        <span class="channel-label">Email</span><span class="channel-value">sanjeevkumar945537@gmail.com</span>
+      </a>
+      <a href="https://www.instagram.com/iam_lord_cruise_619" target="_blank" rel="noopener" class="channel-card magnetic">
+        <span class="channel-label">Instagram</span><span class="channel-value">@iam_lord_cruise_619</span>
+      </a>
+      <a href="https://www.facebook.com/share/19cn9FmFRy/" target="_blank" rel="noopener" class="channel-card magnetic">
+        <span class="channel-label">Facebook</span><span class="channel-value">Sanjeev Kumar</span>
+      </a>
+      <a href="https://www.linkedin.com/in/sanjeev-kumar-995541251" target="_blank" rel="noopener" class="channel-card magnetic">
+        <span class="channel-label">LinkedIn</span><span class="channel-value">Sanjeev Kumar</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand"><img src=" images/logo-mark.png" alt="Cruise Studio logo" class="brand-icon"> <span>CRUISE<span class="brand-dot">•</span>STUDIO</span></div>
+  <p>Web Development · Photo Editing · Video Editing · Advertisement Films</p>
+  <p class="footer-copy">© <span id="year"></span> Cruise Studio. Built by Sanjeev Kumar.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
